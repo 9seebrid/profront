@@ -3,55 +3,66 @@
   justify-content: space-between;
   padding: 10px;
   background-color: #aab89d;
-  align-items: center; /* 항목이 중앙에 오도록 설정 */
+  align-items: center;
 }
 
 .contents-basis p {
-  flex-grow: 1;
   margin: 0;
   padding: 0 10px;
   text-align: center;
 }
 
 .contents-basis .number {
-  flex-grow: 0.5; /* 번호 칸을 적절하게 조정 */
+  flex: 0.5; /* 번호 칸을 작게 */
 }
 
 .contents-basis .basis-title {
-  flex-grow: 3; /* 제목을 가장 넓게 */
+  flex: 3; /* 제목을 가장 넓게 */
 }
 
 .contents-basis .author {
-  flex-grow: 1.5; /* 작성자 공간 조정 */
+  flex: 1.5; /* 작성자 칸 */
 }
 
 .contents-basis .date {
-  flex-grow: 1.5;
+  flex: 2; /* 작성일 칸 */
 }
 
 .contents-basis .views {
-  flex-grow: 1; /* 조회수 칸 크기 조정 */
+  flex: 0.5; /* 조회수 칸 */
 }
 
 .contents-upload {
-  border: 1px solid #ddd;
-  background-color: #f5f5f5;
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  align-items: center; /* 내용 중앙 정렬 */
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  align-items: center;
 }
 
 .contents-upload p {
-  flex-grow: 1;
+  margin: 0;
   text-align: center;
+  flex: 1;
 }
 
-.contents-empty {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+.contents-upload .number {
+  flex: 0.5; /* 번호 칸 */
 }
 
+.contents-upload .basis-title {
+  flex: 3; /* 제목 칸 */
+}
+
+.contents-upload .author {
+  flex: 1.5; /* 작성자 칸 */
+}
+
+.contents-upload .date {
+  flex: 2; /* 작성일 칸 */
+}
+
+.contents-upload .views {
+  flex: 0.5; /* 조회수 칸 */
+}

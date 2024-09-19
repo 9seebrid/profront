@@ -44,7 +44,7 @@ const Community = () => {
                     <div key={notice.write_number} className="contents-upload">
                       <p>{notice.write_number}</p>
                       <p className="basis-title">{notice.write_title}</p>
-                      <p className="author">{notice.user_id}</p>
+                      <p className="author">{notice.userid}</p>
                       <p className="date">{new Date(notice.write_date).toLocaleDateString()}</p>
                       <p className="views">{notice.view_number}</p>
                     </div>
