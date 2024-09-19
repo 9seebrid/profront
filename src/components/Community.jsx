@@ -5,6 +5,7 @@ import './Community.css';
 
 const Community = () => {
   const [notices, setNotices] = useState([]);
+  const { write_number } = useParams();
 
   useEffect(() => {
     const fetchNotices = async () => {
