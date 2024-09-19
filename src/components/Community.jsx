@@ -42,7 +42,7 @@ const Community = () => {
                 {notices.length > 0 ? (
                   notices.map((notice, index) => (
                     <div key={notice.write_number} className="contents-upload">
-                      <p>{notice.write_number}</p>
+                      <p className="number">{notice.write_number}</p>
                       <p className="basis-title">{notice.write_title}</p>
                       <p className="author">{notice.userid}</p>
                       <p className="date">{new Date(notice.write_date).toLocaleDateString()}</p>
