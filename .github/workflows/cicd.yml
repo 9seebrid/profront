@@ -31,5 +31,3 @@ jobs:
         run: docker rm -f reactContainer
       - name: Run container
         run: docker run -d -p 80:80 --name reactContainer koobonse/whipped-front
-
-빨간색에 해당하는 부분은 도커 허브 사용자명 / 레포지토리명 입력
