@@ -53,7 +53,6 @@ profront/
 │   ├── services/      # API 서비스 로직
 │   ├── styles/        # 전역 스타일
 │   └── App.js         # 메인 애플리케이션 파일
-├── .env               # 환경 변수 설정
 └── package.json       # 프로젝트 설정 파일
 ```
 
