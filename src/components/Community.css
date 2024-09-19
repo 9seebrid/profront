@@ -2,14 +2,16 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: #aab89d;
+
+  border: 1px solid #ddd;
   align-items: center; /* 세로 중앙 정렬 */
+  background-color: #aab89d;
 }
 
 .contents-basis p {
   margin: 0;
-  padding: 0 10px;
   text-align: center;
+  flex: 1;
 }
 
 .contents-upload {
