@@ -1,33 +1,31 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.container{
+.container {
   width: 100%;
   height: 100%;
-
 }
 
-.detailArea{
+.detailArea {
   display: flex;
   justify-content: center;
   background: #f6f6f2;
-    
 }
 
-.detailLeft{
+.detailLeft {
   width: 60%;
   margin: 0 auto;
   margin-top: 80px;
 }
 
-.detailLeft img{
+.detailLeft img {
   width: 100%;
 }
 
-.detailLeft .productDescription{
+.detailLeft .productDescription {
   margin: 20px 0;
   font-size: 25px;
   font-weight: 700;
@@ -36,39 +34,35 @@
   padding: 20px;
 }
 
-.detailLeft .productWrap{
-width: 70%;
-margin: 0 auto;
-
+.detailLeft .productWrap {
+  width: 70%;
+  margin: 0 auto;
 }
 
-.detailLeft .productWrap .leftDetailWrap{
+.detailLeft .productWrap .leftDetailWrap {
   border: 1px solid #ccc;
-  padding: 20px
+  padding: 20px;
 }
 
-.detailRight{
+.detailRight {
   width: 40%;
   position: relative;
 }
 
-.detailRight .detailInfo{
+.detailRight .detailInfo {
   position: fixed;
-  top:100px
+  top: 100px;
 }
 
-.detailRight .detailInfo h2{
-  margin-left: 20px
-  
+.detailRight .detailInfo h2 {
+  margin-left: 20px;
 }
 
-
-.detailRight .detailInfo .desDetail{
+.detailRight .detailInfo .desDetail {
   text-align: left;
-  
 }
 
-.detailRight .detailInfo .desDetail .subTitle{
+.detailRight .detailInfo .desDetail .subTitle {
   text-align: center;
   margin-bottom: 30px;
   color: gray;
@@ -76,7 +70,7 @@ margin: 0 auto;
 
 .detailRight .detailInfo .desDetail .subTitle1 p:nth-child(1) {
   font-weight: 700;
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
 }
 
 .detailRight .detailInfo .desDetail .subTitle2 p:nth-child(1) {
@@ -87,40 +81,38 @@ margin: 0 auto;
 .detailRight .detailInfo .desDetail .subTitle2 p:nth-child(7) {
   font-weight: 700;
   margin-top: 3px;
-  margin-left: 20px
+  margin-left: 20px;
 }
 
 .detailRight .detailInfo .desDetail .subTitle3 p:nth-child(1) {
   font-weight: 700;
   margin: 20px 0;
-  
 }
 
 .detailRight .detailInfo .desDetail .subTitle4 p {
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 .detailRight .detailInfo .desDetail .subTitle5 p {
   margin-left: 20px;
-  margin-bottom: 2px
+  margin-bottom: 2px;
 }
 
-
-.detailRight .detailInfo .productDescription{
+.detailRight .detailInfo .productDescription {
   width: 100%;
   margin-left: 20px;
 }
 
-.detailRight .detailInfo .productDescription div{
+.detailRight .detailInfo .productDescription div {
   margin: 10px 0;
 }
 
-.detailRight .price{
+.detailRight .price {
   font-size: 20px;
   font-weight: 700;
 }
 
-.total{
+.total {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -129,65 +121,60 @@ margin: 0 auto;
   margin: 20px;
 }
 
-.total .totalName{
+.total .totalName {
   width: 20%;
 }
 
-.total .totalName p{
+.total .totalName p {
   font-size: 20px;
   font-weight: 700;
 }
 
-.total .totalPrice{
+.total .totalPrice {
   width: 70%;
-
 }
 
-.total .totalPrice p{
+.total .totalPrice p {
   font-size: 20px;
   font-weight: 700;
   text-align: right;
-  
 }
 
-.purchaseButton, .cartButton{
+.purchaseButton, .cartButton {
   width: 43%;
   padding: 15px;
   margin: 10px;
   background-color: #000000;
   color: white;
-  border:solid #aab89d;
-  
+  border: solid #aab89d;
   cursor: pointer;
-  
 }
-.paymentButton button:first-child{
+
+.paymentButton button:first-child {
   background-color: #f5f5f5ff;
-  color : black;
+  color: black;
 }
 
-.paymentButton button:nth-child(2){
+.paymentButton button:nth-child(2) {
   background-color: #aab89d;
-  
 }
 
-.selectProduct{
+.selectProduct {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-.selectProduct select{
+.selectProduct select {
   width: 73%;
   padding: 10px;
   border: 1px solid #ccc;
-  
   margin-right: 5px;
   font-size: 15px;
   font-weight: 500;
 }
 
-.selectProduct button{
+.selectProduct button {
   width: 30%;
   padding: 10px;
   background-color: #000000;
@@ -195,89 +182,139 @@ margin: 0 auto;
   border: none;
   cursor: pointer;
   margin-left: 5px;
-  
 }
 
-.selectProduct span{
+.selectProduct span {
   font-size: 18px;
   font-weight: 500;
   margin-left: 5px;
 }
-.selectedOption button{
-  width : 15px;
-  height : 15px;
+
+.selectedOption button {
+  width: 15px;
+  height: 15px;
 }
 
-.selectedOption li{
-  font-size : 10px;
+.selectedOption li {
+  font-size: 10px;
 }
+
 /* register css */
-.regi_container{
-  width: 33.33%; 
-  min-width: 560px;   
-  margin: 0 auto; 
-  padding: 20px; 
-  box-sizing: border-box; 
-  border: 1px solid #ddd; 
-  background-color: #f9f9f9; 
+.regi_container {
+  width: 33.33%;
+  min-width: 560px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
 }
 
-.productQuantity button{
-  background-color: #aab89d ;
+.productQuantity button {
+  background-color: #aab89d;
 }
 
+/* 1280px 이하 해상도 */
 @media (max-width: 1280px) {
-  .detailLeft{
-    width: 45%;
+  .detailLeft {
+    width: 65%;
   }
-  .detailLeft .productWrap{
-    margin-left: 40px;
+  
+  .detailLeft .productWrap {
+    margin-left: 100px;
     margin-right: 10px;
   }
-  .detailRight{
-    width: 35%
+  
+  .detailRight {
+    width: 45%;
   }
 
-
-  .detailInfo div p{
-    font-size:16px;
+  .detailInfo div p {
+    font-size: 16px;
   }
 }
 
+/* 980px 이하 해상도 */
 @media (max-width: 980px) {
-  .detailArea{
+  .detailArea {
     display: flex;
     flex-direction: column;
   }
-  .detailLeft{
-    order:2;
-    width:100%;
+
+  .detailLeft {
+    order: 2;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
+
   .detailLeft .productWrap {
     width: 60%;
-    margin:0
-  }
-  .detailRight{
-    width: 100%
-  }
-  .detailRight .detailInfo{
-    position:relative;
-    order:1
-
+    margin: 0;
   }
 
-  .detailRight .detailInfo .desDetail{
-    text-align:center
+  .detailRight {
+    width: 100%;
   }
-  .paymentButton button{
+
+  .detailRight .detailInfo {
+    position: relative;
+    order: 1;
+  }
+
+  .detailRight .detailInfo .desDetail {
+    text-align: center;
+  }
+
+  .paymentButton button {
     width: 40%;
     height: 15%;
     margin-bottom: 40px;
   }
-  .detailInfo div p{
+
+  .detailInfo div p {
     font-size: 15px;
   }
+}
 
+/* 600px 이하 해상도 */
+@media (max-width: 600px) {
+  .detailLeft {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .detailRight {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .detailLeft .productWrap, 
+  .detailRight .detailInfo {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .purchaseButton, .cartButton {
+    width: 90%;
+    margin: 5px 0;
+  }
+
+  .paymentButton button {
+    width: 100%;
+  }
+
+  .total {
+    
+    text-align: center;
+  }
+
+  .total .totalName, 
+  .total .totalPrice {
+    width: 100%;
+  }
+
+  .detailInfo div p {
+    font-size: 14px;
+  }
 }
