@@ -9,7 +9,7 @@ const Community = () => {
   useEffect(() => {
     const fetchNotices = async () => {
       try {
-        const response = await axios.get('/api/notices');
+        const response = await axios.get('https://whippedback.9seebird.site/community_announcement');
         setNotices(response.data);
       } catch (error) {
         console.error('Error fetching notices:', error);
