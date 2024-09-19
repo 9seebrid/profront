@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
 import './Community.css';
+import { useParams } from 'react-router-dom';
 
 const Community = () => {
   const [notices, setNotices] = useState([]);
-  const { write_number } = useParams();
+  const { notice, write_number } = useParams();
 
   useEffect(() => {
     const fetchNotices = async () => {
