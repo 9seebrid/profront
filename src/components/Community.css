@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 10px;
   background-color: #aab89d;
-  align-items: center;
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
 .contents-basis p {
@@ -12,33 +12,13 @@
   text-align: center;
 }
 
-.contents-basis .number {
-  flex: 0.5; /* 번호 칸을 작게 */
-}
-
-.contents-basis .basis-title {
-  flex: 3; /* 제목을 가장 넓게 */
-}
-
-.contents-basis .author {
-  flex: 1.5; /* 작성자 칸 */
-}
-
-.contents-basis .date {
-  flex: 2; /* 작성일 칸 */
-}
-
-.contents-basis .views {
-  flex: 0.5; /* 조회수 칸 */
-}
-
 .contents-upload {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
-  align-items: center;
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
 .contents-upload p {
@@ -47,22 +27,32 @@
   flex: 1;
 }
 
+.contents-basis .number, 
 .contents-upload .number {
-  flex: 0.5; /* 번호 칸 */
+  flex: 0.5;
+  text-align: center;
 }
 
+.contents-basis .basis-title, 
 .contents-upload .basis-title {
-  flex: 3; /* 제목 칸 */
+  flex: 3;
+  text-align: center;
 }
 
+.contents-basis .author, 
 .contents-upload .author {
-  flex: 1.5; /* 작성자 칸 */
+  flex: 1.5;
+  text-align: center;
 }
 
+.contents-basis .date, 
 .contents-upload .date {
-  flex: 2; /* 작성일 칸 */
+  flex: 2;
+  text-align: center;
 }
 
+.contents-basis .views, 
 .contents-upload .views {
-  flex: 0.5; /* 조회수 칸 */
+  flex: 0.5;
+  text-align: center;
 }
