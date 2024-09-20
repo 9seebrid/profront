@@ -10,7 +10,7 @@ const Community = () => {
   useEffect(() => {
     const fetchNotices = async () => {
       try {
-        const response = await axios.get('https://whippedback.9seebird.site/community_announcement');
+        const response = await axios.get('http://localhost:8080/community_announcement');
         setNotices(response.data);
       } catch (error) {
         console.error('Error fetching notices:', error);
@@ -38,7 +38,7 @@ const Community = () => {
                   <p className="basis-title">제목</p>
                   <p className="author">작성자</p>
                   <p className="date">작성일자</p>
-                  {/* <p className="views">조회</p> */}
+                  <p className="views">조회</p>
                 </div>
                 {notices.length > 0 ? (
                   notices.map((notice, index) => (
@@ -53,23 +53,23 @@ const Community = () => {
                       </Link>
                       <p className="author">{notice.userid}</p>
                       <p className="date">{new Date(notice.write_date).toLocaleDateString()}</p>
-                      {/* <p className="views">{notice.view_number}</p> */}
+                      <p className="views">{notice.view_number}</p>
                     </div>
                   ))
                 ) : (
                   <div className="contents-empty">
-                    <p>Loading...</p>
+                    <p>{''}</p>
                   </div>
                 )}
               </div>
-              {/* <div className="contents-footer"> */}
-              {/* <select className="footer-dropdown"> */}
-              {/* <option value="title">제목</option> */}
-              {/* <option value="author">작성자</option> */}
-              {/* </select> */}
-              {/* <input type="text" placeholder="" className="search-input" /> */}
-              {/* <button className="search-btn">찾기</button> */}
-              {/* </div> */}
+              <div className="contents-footer">
+                <select className="footer-dropdown">
+                  <option value="title">제목</option>
+                  <option value="author">작성자</option>
+                </select>
+                <input type="text" placeholder="" className="search-input" />
+                <button className="search-btn">찾기</button>
+              </div>
             </div>
           </div>
         </div>
