@@ -30,6 +30,6 @@ jobs:
       - name: Delete existing container
         run: docker rm -f reactContainer
       - name: Delete prune
-        run: docker system prune -a
+        run: docker system prune -a --force
       - name: Run container
         run: docker run -d -p 80:80 --name reactContainer koobonse/whipped-front
