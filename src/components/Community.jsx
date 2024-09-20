@@ -38,7 +38,7 @@ const Community = () => {
                   <p className="basis-title">제목</p>
                   <p className="author">작성자</p>
                   <p className="date">작성일자</p>
-                  <p className="views">조회</p>
+                  {/* <p className="views">조회</p> */}
                 </div>
                 {notices.length > 0 ? (
                   notices.map((notice, index) => (
@@ -53,7 +53,7 @@ const Community = () => {
                       </Link>
                       <p className="author">{notice.userid}</p>
                       <p className="date">{new Date(notice.write_date).toLocaleDateString()}</p>
-                      <p className="views">{notice.view_number}</p>
+                      {/* <p className="views">{notice.view_number}</p> */}
                     </div>
                   ))
                 ) : (

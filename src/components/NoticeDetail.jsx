@@ -11,10 +11,6 @@ const NoticeDetail = () => {
   useEffect(() => {
     const fetchNotice = async () => {
       try {
-        // 조회수 증가 API 호출
-        await axios.put(`https://whippedback.9seebird.site/community_detail/view/${write_number}`);
-
-        // 게시글 데이터 가져오기
         const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${write_number}`);
         setNotice(response.data);
       } catch (error) {
@@ -37,7 +33,7 @@ const NoticeDetail = () => {
           <div className="notice-meta">
             <p>작성자: {notice[0].userid}</p>
             <p>작성일자: {new Date(notice[0].write_date).toLocaleDateString()}</p>
-            <p>조회수: {notice[0].view_number}</p>
+            {/* <p>조회수: {notice[0].view_number}</p> */}
           </div>
           <div className="notice-body">
             <p>{notice[0].content}</p>
