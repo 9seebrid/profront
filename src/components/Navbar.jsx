@@ -5,20 +5,20 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { logout } from '../redux/slices/authSlice';
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IoCartSharp } from "react-icons/io5";
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { IoCartSharp } from 'react-icons/io5';
 const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(false);
   const user = useSelector((state) => state.auth.authData);
   const toggleMenu = () => {
-    setIsOpen(!isOpen);  // 메뉴 상태를 토글
+    setIsOpen(!isOpen); // 메뉴 상태를 토글
   };
   return (
     <div className="navi">
       <div className="hamburger" onClick={toggleMenu}>
-       <RxHamburgerMenu />
+        <RxHamburgerMenu />
       </div>
       <div className={`left ${isOpen ? 'open' : ''}`}>
         <p
@@ -43,10 +43,10 @@ const Navbar = () => {
             setIsOpen(false);
           }}
         >
-          Community
+          Notice
         </p>
       </div>
-    {/* <div className="hamburger" onClick={toggleMenu}>
+      {/* <div className="hamburger" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
@@ -91,7 +91,7 @@ const Navbar = () => {
       <div className="right">
         <div className="login">
           {user ? (
-            <p className='logincart'>
+            <p className="logincart">
               <span>{user.name}님</span>
               <span
                 onClick={() => {
@@ -103,9 +103,7 @@ const Navbar = () => {
                 {' '}
                 Logout
               </span>
-              
             </p>
-           
           ) : (
             <>
               <span

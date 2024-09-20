@@ -11,6 +11,10 @@ const NoticeDetail = () => {
   useEffect(() => {
     const fetchNotice = async () => {
       try {
+        // 조회수 증가 API 호출
+        await axios.put(`https://whippedback.9seebird.site/community_detail/view/${write_number}`);
+
+        // 게시글 데이터 가져오기
         const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${write_number}`);
         setNotice(response.data);
       } catch (error) {
