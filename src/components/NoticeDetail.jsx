@@ -11,8 +11,8 @@ const NoticeDetail = () => {
     const fetchNotice = async () => {
       try {
         // 조회수 업데이트 API 호출
-        await axios.put(`https://whippedback.9seebird.site/community_announcement/view/${id}`);
-        const response = await axios.get(`https://whippedback.9seebird.site/community_announcement/${id}`);
+        await axios.put(`https://whippedback.9seebird.site/community_detail/${id}`);
+        const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${id}`);
         setNotice(response.data);
       } catch (error) {
         console.error('Error fetching notice:', error);
