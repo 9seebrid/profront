@@ -4,23 +4,26 @@ import axios from 'axios';
 import Navbar from './Navbar';
 
 const NoticeDetail = () => {
-  const { writeNumber } = useParams(); // 게시글 번호를 URL 파라미터에서 가져옴
+  const { write_number } = useParams(); // 게시글 번호를 URL 파라미터에서 가져옴
   const [notice, setNotice] = useState(null);
+  console.log(write_number);
 
   useEffect(() => {
     const fetchNotice = async () => {
       try {
         // 데이터를 가져와서 확인하는 로깅 추가
-        const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${writeNumber}`);
+        const response = await axios.get(`http://localhost:8080/community_detail/${write_number}`);
         console.log(response.data); // 데이터 확인용 로깅
         setNotice(response.data);
-        console.log(setNotice); // 데이터 확인용 로깅
       } catch (error) {
         console.error('Error fetching notice:', error);
       }
     };
     fetchNotice();
-  }, [writeNumber]);
+    console.log(fetchNotice);
+  }, [write_number]);
+
+  console.log(setNotice);
 
   if (!notice) {
     return <p>Loading...</p>;
@@ -30,11 +33,12 @@ const NoticeDetail = () => {
     <div style={{ backgroundColor: 'rgb(246, 246, 242)', height: '100vh' }}>
       <Navbar />
       <div style={{ paddingTop: '110px', paddingLeft: '3rem', paddingRight: '3rem' }}>
-        <h2>{notice.write_title}</h2>
-        <p>작성자: {notice.userid}</p>
-        <p>작성일자: {new Date(notice.write_date).toLocaleDateString()}</p>
-        <p>조회수: {notice.view_number}</p>
-        <p>{notice.content}</p>
+        <h2>{notice[0].write_title}</h2>
+        <p>작성자: {notice[0].userid}</p>
+        <p>작성일자: {new Date(notice[0].write_date).toLocaleDateString()}</p>
+        <p>조회수: {notice[0].view_number}</p>
+        <p>{notice[0].content}</p>
+        {console.log(notice[0].content)}
       </div>
     </div>
   );
