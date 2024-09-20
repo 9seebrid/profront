@@ -31,19 +31,19 @@
 
 .contents-basis .number, 
 .contents-upload .number {
-  flex: 0.5;
+  flex: 1;
   text-align: center;
 }
 
 .contents-basis .basis-title, 
 .contents-upload .basis-title {
-  flex: 5;
+  flex: 7;
   text-align: center;
 }
 
 .contents-basis .author, 
 .contents-upload .author {
-  flex: 1.5;
+  flex: 1;
   text-align: center;
 }
 
