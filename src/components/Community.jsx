@@ -58,18 +58,18 @@ const Community = () => {
                   ))
                 ) : (
                   <div className="contents-empty">
-                    <p>Loading.....</p>
+                    <p>Loading...</p>
                   </div>
                 )}
               </div>
-              {/* <div className="contents-footer">
-                <select className="footer-dropdown">
-                  <option value="title">제목</option>
-                  <option value="author">작성자</option>
-                </select>
-                <input type="text" placeholder="" className="search-input" />
-                <button className="search-btn">찾기</button>
-              </div> */}
+              {/* <div className="contents-footer"> */}
+              {/* <select className="footer-dropdown"> */}
+              {/* <option value="title">제목</option> */}
+              {/* <option value="author">작성자</option> */}
+              {/* </select> */}
+              {/* <input type="text" placeholder="" className="search-input" /> */}
+              {/* <button className="search-btn">찾기</button> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
