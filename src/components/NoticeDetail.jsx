@@ -12,7 +12,7 @@ const NoticeDetail = () => {
     const fetchNotice = async () => {
       try {
         // 데이터를 가져와서 확인하는 로깅 추가
-        const response = await axios.get(`http://localhost:8080/community_detail/${write_number}`);
+        const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${write_number}`);
         console.log(response.data); // 데이터 확인용 로깅
         setNotice(response.data);
       } catch (error) {
