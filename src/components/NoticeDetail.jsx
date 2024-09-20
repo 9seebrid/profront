@@ -14,6 +14,7 @@ const NoticeDetail = () => {
         await axios.put(`https://whippedback.9seebird.site/community_detail/${writeNumber}`);
         const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${writeNumber}`);
         setNotice(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error('Error fetching notice:', error);
       }
