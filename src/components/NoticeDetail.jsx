@@ -10,9 +10,6 @@ const NoticeDetail = () => {
   useEffect(() => {
     const fetchNotice = async () => {
       try {
-        // 조회수 업데이트 API 호출
-        await axios.put(`https://whippedback.9seebird.site/community_detail/${writeNumber}`);
-
         // 데이터를 가져와서 확인하는 로깅 추가
         const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${writeNumber}`);
         console.log(response.data); // 데이터 확인용 로깅
