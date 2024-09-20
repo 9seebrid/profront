@@ -44,7 +44,11 @@ const Community = () => {
                   notices.map((notice, index) => (
                     <div key={notice.write_number} className="contents-upload">
                       <p className="number">{notice.write_number}</p>
-                      <Link to={`/notice_detail/${notice.write_number}`} className="basis-title">
+                      <Link
+                        to={`/notice_detail/${notice.write_number}`}
+                        className="basis-title"
+                        style={{ textDecoration: 'none' }}
+                      >
                         {notice.write_title}
                       </Link>
                       <p className="author">{notice.userid}</p>

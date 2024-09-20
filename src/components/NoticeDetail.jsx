@@ -4,22 +4,22 @@ import axios from 'axios';
 import Navbar from './Navbar';
 
 const NoticeDetail = () => {
-  const { id } = useParams(); // 게시글 번호를 URL 파라미터에서 가져옴
+  const { writeNumber } = useParams(); // 게시글 번호를 URL 파라미터에서 가져옴
   const [notice, setNotice] = useState(null);
 
   useEffect(() => {
     const fetchNotice = async () => {
       try {
         // 조회수 업데이트 API 호출
-        await axios.put(`https://whippedback.9seebird.site/community_detail/${id}`);
-        const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${id}`);
+        await axios.put(`https://whippedback.9seebird.site/community_detail/${writeNumber}`);
+        const response = await axios.get(`https://whippedback.9seebird.site/community_detail/${writeNumber}`);
         setNotice(response.data);
       } catch (error) {
         console.error('Error fetching notice:', error);
       }
     };
     fetchNotice();
-  }, [id]);
+  }, [writeNumber]);
 
   if (!notice) {
     return <p>Loading...</p>;
