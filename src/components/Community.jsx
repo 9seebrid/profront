@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Link 사용
 import axios from 'axios';
 import Navbar from './Navbar';
 import './Community.css';
@@ -43,7 +44,9 @@ const Community = () => {
                   notices.map((notice, index) => (
                     <div key={notice.write_number} className="contents-upload">
                       <p className="number">{notice.write_number}</p>
-                      <p className="basis-title">{notice.write_title}</p>
+                      <Link to={`/notice_detail/${notice.write_number}`} className="basis-title">
+                        {notice.write_title}
+                      </Link>
                       <p className="author">{notice.userid}</p>
                       <p className="date">{new Date(notice.write_date).toLocaleDateString()}</p>
                       <p className="views">{notice.view_number}</p>

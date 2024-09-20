@@ -14,6 +14,7 @@ import Community from './components/Community';
 import DiyItem from './components/DiyItem';
 import Find_pw from './components/Find_pw';
 import Find_id from './components/Find_id';
+import NoticeDetail from './components/NoticeDetail';
 
 function App() {
   return (
@@ -32,8 +33,9 @@ function App() {
           <Route path="/purchase_complete" element={<Purchase_Complete />} />
           <Route path="/cart" element={<CartPage />}></Route>
           <Route path="/product_detail/:productId" element={<ProductDetail />} />
-          <Route path="/diyitem" element={<DiyItem/>} />
-          <Route path="/community" element={<Community/>} />
+          <Route path="/diyitem" element={<DiyItem />} />
+          <Route path="/community" element={<Community />} />
+          <Route pate="/notice_detail/:id" element={<NoticeDetail />} />
         </Routes>
       </div>
     </BrowserRouter>
