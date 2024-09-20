@@ -58,7 +58,7 @@ const Community = () => {
                   ))
                 ) : (
                   <div className="contents-empty">
-                    <p>{''}</p>
+                    <p>Loading.....</p>
                   </div>
                 )}
               </div>

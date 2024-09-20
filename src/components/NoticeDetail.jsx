@@ -25,17 +25,19 @@ const NoticeDetail = () => {
   }
 
   return (
-    <div className="notice-detail-container">
+    <div>
       <Navbar />
-      <div className="notice-detail-content">
-        <h2 className="notice-title">{notice[0].write_title}</h2>
-        <div className="notice-meta">
-          <p>작성자: {notice[0].userid}</p>
-          <p>작성일자: {new Date(notice[0].write_date).toLocaleDateString()}</p>
-          <p>조회수: {notice[0].view_number}</p>
-        </div>
-        <div className="notice-body">
-          <p>{notice[0].content}</p>
+      <div className="notice-detail-container">
+        <div className="notice-detail-content">
+          <h2 className="notice-title">{notice[0].write_title}</h2>
+          <div className="notice-meta">
+            <p>작성자: {notice[0].userid}</p>
+            <p>작성일자: {new Date(notice[0].write_date).toLocaleDateString()}</p>
+            <p>조회수: {notice[0].view_number}</p>
+          </div>
+          <div className="notice-body">
+            <p>{notice[0].content}</p>
+          </div>
         </div>
       </div>
     </div>
